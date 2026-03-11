@@ -1,0 +1,194 @@
+2026-03-08 21:28:55 [INFO ] com.jobagent.Main - ╔══════════════════════════════════════════════════════╗
+2026-03-08 21:28:55 [INFO ] com.jobagent.Main - ║     Naukri Job Agent  v2.0  — AI-powered             ║
+2026-03-08 21:28:55 [INFO ] com.jobagent.Main - ║  CV → Keywords → Page-Parallel → Score → Apply      ║
+2026-03-08 21:28:55 [INFO ] com.jobagent.Main - ╚══════════════════════════════════════════════════════╝
+2026-03-08 21:28:55 [INFO ] com.jobagent.config.AppConfig - [ CONFIG ] Loaded from classpath (bundled jar).
+2026-03-08 21:28:55 [INFO ] com.jobagent.Main - Mode: DAEMON — every 3 hour(s).
+2026-03-08 21:28:55 [INFO ] com.jobagent.Main - ━━━━━━━━━━━━━━━━  Pipeline START  ━━━━━━━━━━━━━━━━
+2026-03-08 21:28:55 [INFO ] c.jobagent.config.GroqApiKeyManager - [ KEYS ] 4 Groq API key(s) loaded.
+2026-03-08 21:28:55 [INFO ] c.jobagent.config.GroqApiKeyManager - [ KEYS ] 4 Groq API key(s) loaded.
+2026-03-08 21:28:55 [INFO ] c.jobagent.service.JobTrackerService - [ TRACKER ] Initialised. Tracker file: D:\AI\AI\naukri-agent\naukri_applied_jobs.log
+2026-03-08 21:28:55 [INFO ] c.jobagent.service.WhatsAppNotifier - [ WA ] WhatsApp notifications: ENABLED  →  +919995667550
+2026-03-08 21:28:55 [INFO ] com.jobagent.Main - [ CV ] Reading CV from: ./src/main/resources/CV/Sumith_PA_CV17.pdf
+2026-03-08 21:28:56 [INFO ] com.jobagent.agent.CVReaderAgent - [ CV ] Loaded 19639 chars from Sumith_PA_CV17.pdf
+2026-03-08 21:28:56 [INFO ] com.jobagent.Main - [ CV ] 19639 chars loaded.
+2026-03-08 21:28:56 [INFO ] com.jobagent.Main - [ CV ] Inferring roles...
+2026-03-08 21:28:56 [WARN ] com.jobagent.service.GroqClient - [ GROQ ] Rate-limited (attempt 1). Rotating key...
+2026-03-08 21:28:56 [WARN ] c.jobagent.config.GroqApiKeyManager - [ KEYS ] Key ending …Tzqk7y rate-limited — rotating.
+2026-03-08 21:28:56 [INFO ] c.jobagent.config.GroqApiKeyManager - [ KEYS ] Now using key ending …LkFgeG
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ CV ] Here are the descriptions of the candidate's current and most recent job roles/titles and their primary technology domain and skill areas:
+
+The candidate's current job role is Lead Automation Architect and QA Lead at Ascendion Inc, a position they have held since November 2025. Their primary technology domain is Quality Assurance and Test Automation, with skill areas including test automation architecture, AI-driven test automation, CI/CD pipelines, and agile/scrum delivery. The candidate's expertise spans multiple technologies, including Java, Python, Selenium, and cloud platforms like AWS and Azure.
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ] Using 13 static keyword(s).
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   1. automation testing java
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   2. Automation Architect
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   3. QA Lead
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   4. Automation Testing Lead
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   5. Head of Test Automation
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   6. Technical Lead Quality Assurance
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   7. Senior Automation Engineer
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   8. Lead Quality Assurance Engineer
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   9. Sotware Development Engineer in Test
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   10. SDET
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   11. Senior Test Engineer
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   12. Test Automation Manager
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ KW ]   13. Senior Software Engineer in Test
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ MODE ] Parallel — 5 browser(s), 13 keyword(s), 50 max page(s).
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ MODE ]   Worker-1 → pages [1, 6, 11, 16, 21, 26, 31, 36, 41, 46] for every keyword
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ MODE ]   Worker-2 → pages [2, 7, 12, 17, 22, 27, 32, 37, 42, 47] for every keyword
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ MODE ]   Worker-3 → pages [3, 8, 13, 18, 23, 28, 33, 38, 43, 48] for every keyword
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ MODE ]   Worker-4 → pages [4, 9, 14, 19, 24, 29, 34, 39, 44, 49] for every keyword
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ MODE ]   Worker-5 → pages [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] for every keyword
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ W5 ] Starting — 13 keyword(s), pages [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] each
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ W4 ] Starting — 13 keyword(s), pages [4, 9, 14, 19, 24, 29, 34, 39, 44, 49] each
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ W2 ] Starting — 13 keyword(s), pages [2, 7, 12, 17, 22, 27, 32, 37, 42, 47] each
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ W1 ] Starting — 13 keyword(s), pages [1, 6, 11, 16, 21, 26, 31, 36, 41, 46] each
+2026-03-08 21:28:59 [INFO ] com.jobagent.Main - [ W3 ] Starting — 13 keyword(s), pages [3, 8, 13, 18, 23, 28, 33, 38, 43, 48] each
+2026-03-08 21:29:00 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:29:00 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:29:01 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:29:01 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:29:01 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:29:01 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:29:02 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:29:02 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:29:03 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:29:03 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:29:03 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:29:03 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:29:15 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:29:15 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:29:17 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:29:17 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:29:18 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:29:18 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:29:20 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:29:20 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:29:30 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] ✓ Logged in successfully.
+2026-03-08 21:29:33 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] ✓ Logged in successfully.
+2026-03-08 21:29:35 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] ✓ Logged in successfully.
+2026-03-08 21:29:35 [INFO ] com.jobagent.Main - [ W2 ] ✓ Logged in.
+2026-03-08 21:29:36 [INFO ] com.jobagent.agent.SessionKeepAlive - [ KEEP-ALIVE ] Starting — mouse nudge every 60s, browser ping every 90s.
+2026-03-08 21:29:36 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Starting — 13 keyword(s), pages [2, 7, 12, 17, 22, 27, 32, 37, 42, 47] each
+2026-03-08 21:29:36 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Location pinned to: Bengaluru (locationId=6) — geo-IP independent
+2026-03-08 21:29:36 [INFO ] c.jobagent.agent.NaukriSearchAgent - ┌─────────────────────────────────────────────────────
+2026-03-08 21:29:36 [INFO ] c.jobagent.agent.NaukriSearchAgent - │ KEYWORD: "automation testing java"  pages: [2, 7, 12, 17, 22, 27, 32, 37, 42, 47]  | 13 yrs | Bengaluru
+2026-03-08 21:29:36 [INFO ] c.jobagent.agent.NaukriSearchAgent - └─────────────────────────────────────────────────────
+2026-03-08 21:29:36 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] Loading SRP page 1 → https://www.naukri.com/automation-testing-java-jobs-in-bengaluru?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:38 [INFO ] com.jobagent.Main - [ W3 ] ✓ Logged in.
+2026-03-08 21:29:38 [INFO ] com.jobagent.agent.SessionKeepAlive - [ KEEP-ALIVE ] Starting — mouse nudge every 60s, browser ping every 90s.
+2026-03-08 21:29:38 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Starting — 13 keyword(s), pages [3, 8, 13, 18, 23, 28, 33, 38, 43, 48] each
+2026-03-08 21:29:38 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Location pinned to: Bengaluru (locationId=6) — geo-IP independent
+2026-03-08 21:29:38 [INFO ] c.jobagent.agent.NaukriSearchAgent - ┌─────────────────────────────────────────────────────
+2026-03-08 21:29:38 [INFO ] c.jobagent.agent.NaukriSearchAgent - │ KEYWORD: "automation testing java"  pages: [3, 8, 13, 18, 23, 28, 33, 38, 43, 48]  | 13 yrs | Bengaluru
+2026-03-08 21:29:38 [INFO ] c.jobagent.agent.NaukriSearchAgent - └─────────────────────────────────────────────────────
+2026-03-08 21:29:38 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] Loading SRP page 1 → https://www.naukri.com/automation-testing-java-jobs-in-bengaluru?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:40 [INFO ] com.jobagent.Main - [ W1 ] ✓ Logged in.
+2026-03-08 21:29:40 [INFO ] com.jobagent.agent.SessionKeepAlive - [ KEEP-ALIVE ] Starting — mouse nudge every 60s, browser ping every 90s.
+2026-03-08 21:29:40 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Starting — 13 keyword(s), pages [1, 6, 11, 16, 21, 26, 31, 36, 41, 46] each
+2026-03-08 21:29:40 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Location pinned to: Bengaluru (locationId=6) — geo-IP independent
+2026-03-08 21:29:40 [INFO ] c.jobagent.agent.NaukriSearchAgent - ┌─────────────────────────────────────────────────────
+2026-03-08 21:29:40 [INFO ] c.jobagent.agent.NaukriSearchAgent - │ KEYWORD: "automation testing java"  pages: [1, 6, 11, 16, 21, 26, 31, 36, 41, 46]  | 13 yrs | Bengaluru
+2026-03-08 21:29:40 [INFO ] c.jobagent.agent.NaukriSearchAgent - └─────────────────────────────────────────────────────
+2026-03-08 21:29:40 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] Loading SRP page 1 → https://www.naukri.com/automation-testing-java-jobs-in-bengaluru?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:46 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:29:46 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] ✓ Logged in successfully.
+2026-03-08 21:29:47 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] ✓ Logged in successfully.
+2026-03-08 21:29:47 [INFO ] c.jobagent.agent.NaukriFilterAgent - [ FILTER ] filters.apply=false — all SRP filters skipped.
+2026-03-08 21:29:47 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ══ "automation testing java" PAGE 2 ══  URL: https://www.naukri.com/automation-testing-java-jobs-in-bengaluru-2?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:48 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:29:49 [INFO ] c.jobagent.agent.NaukriFilterAgent - [ FILTER ] filters.apply=false — all SRP filters skipped.
+2026-03-08 21:29:49 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ══ "automation testing java" PAGE 3 ══  URL: https://www.naukri.com/automation-testing-java-jobs-in-bengaluru-3?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:50 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriFilterAgent - [ FILTER ] filters.apply=false — all SRP filters skipped.
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ══ "automation testing java" PAGE 1 ══  URL: https://www.naukri.com/automation-testing-java-jobs-in-bengaluru?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:51 [INFO ] com.jobagent.Main - [ W4 ] ✓ Logged in.
+2026-03-08 21:29:51 [INFO ] com.jobagent.agent.SessionKeepAlive - [ KEEP-ALIVE ] Starting — mouse nudge every 60s, browser ping every 90s.
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Starting — 13 keyword(s), pages [4, 9, 14, 19, 24, 29, 34, 39, 44, 49] each
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Location pinned to: Bengaluru (locationId=6) — geo-IP independent
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriSearchAgent - ┌─────────────────────────────────────────────────────
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriSearchAgent - │ KEYWORD: "automation testing java"  pages: [4, 9, 14, 19, 24, 29, 34, 39, 44, 49]  | 13 yrs | Bengaluru
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriSearchAgent - └─────────────────────────────────────────────────────
+2026-03-08 21:29:51 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] Loading SRP page 1 → https://www.naukri.com/automation-testing-java-jobs-in-bengaluru?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:52 [INFO ] com.jobagent.Main - [ W5 ] ✓ Logged in.
+2026-03-08 21:29:52 [INFO ] com.jobagent.agent.SessionKeepAlive - [ KEEP-ALIVE ] Starting — mouse nudge every 60s, browser ping every 90s.
+2026-03-08 21:29:52 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Starting — 13 keyword(s), pages [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] each
+2026-03-08 21:29:52 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ W ] Location pinned to: Bengaluru (locationId=6) — geo-IP independent
+2026-03-08 21:29:52 [INFO ] c.jobagent.agent.NaukriSearchAgent - ┌─────────────────────────────────────────────────────
+2026-03-08 21:29:52 [INFO ] c.jobagent.agent.NaukriSearchAgent - │ KEYWORD: "automation testing java"  pages: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]  | 13 yrs | Bengaluru
+2026-03-08 21:29:52 [INFO ] c.jobagent.agent.NaukriSearchAgent - └─────────────────────────────────────────────────────
+2026-03-08 21:29:52 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] Loading SRP page 1 → https://www.naukri.com/automation-testing-java-jobs-in-bengaluru?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:29:58 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:29:59 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:30:00 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:30:02 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:30:02 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ✓ GNB experience set to 13 years.
+2026-03-08 21:30:04 [INFO ] c.jobagent.agent.NaukriFilterAgent - [ FILTER ] filters.apply=false — all SRP filters skipped.
+2026-03-08 21:30:04 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ══ "automation testing java" PAGE 5 ══  URL: https://www.naukri.com/automation-testing-java-jobs-in-bengaluru-5?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:30:04 [INFO ] c.jobagent.agent.NaukriFilterAgent - [ FILTER ] filters.apply=false — all SRP filters skipped.
+2026-03-08 21:30:04 [INFO ] c.jobagent.agent.NaukriSearchAgent - [ SEARCH ] ══ "automation testing java" PAGE 4 ══  URL: https://www.naukri.com/automation-testing-java-jobs-in-bengaluru-4?experience=13&jobAge=7&location=bengaluru&locationId=6&locationLabel=bengaluru&cityLabel=bengaluru
+2026-03-08 21:30:04 [INFO ] com.jobagent.Main - Shutdown.
+2026-03-08 21:33:22 [INFO ] com.jobagent.Main - ╔══════════════════════════════════════════════════════╗
+2026-03-08 21:33:22 [INFO ] com.jobagent.Main - ║     Naukri Job Agent  v2.0  — AI-powered             ║
+2026-03-08 21:33:22 [INFO ] com.jobagent.Main - ║  CV → Keywords → Page-Parallel → Score → Apply      ║
+2026-03-08 21:33:22 [INFO ] com.jobagent.Main - ╚══════════════════════════════════════════════════════╝
+2026-03-08 21:33:22 [INFO ] com.jobagent.config.AppConfig - [ CONFIG ] Loaded from classpath (bundled jar).
+2026-03-08 21:33:22 [INFO ] com.jobagent.Main - Mode: DAEMON — every 3 hour(s).
+2026-03-08 21:33:22 [INFO ] com.jobagent.Main - ━━━━━━━━━━━━━━━━  Pipeline START  ━━━━━━━━━━━━━━━━
+2026-03-08 21:33:22 [INFO ] c.jobagent.config.GroqApiKeyManager - [ KEYS ] 4 Groq API key(s) loaded.
+2026-03-08 21:33:22 [INFO ] c.jobagent.config.GroqApiKeyManager - [ KEYS ] 4 Groq API key(s) loaded.
+2026-03-08 21:33:23 [INFO ] c.jobagent.service.JobTrackerService - [ TRACKER ] Initialised. Tracker file: D:\AI\AI\naukri-agent\naukri_applied_jobs.log
+2026-03-08 21:33:23 [INFO ] c.jobagent.service.WhatsAppNotifier - [ WA ] WhatsApp notifications: ENABLED  →  +919995667550
+2026-03-08 21:33:23 [INFO ] com.jobagent.Main - [ CV ] Reading CV from: ./src/main/resources/CV/Sumith_PA_CV17.pdf
+2026-03-08 21:33:24 [INFO ] com.jobagent.agent.CVReaderAgent - [ CV ] Loaded 19639 chars from Sumith_PA_CV17.pdf
+2026-03-08 21:33:24 [INFO ] com.jobagent.Main - [ CV ] 19639 chars loaded.
+2026-03-08 21:33:24 [INFO ] com.jobagent.Main - [ CV ] Inferring roles...
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ CV ] Here are the descriptions of the candidate's current and most recent job roles/titles and their primary technology domain and skill areas:
+
+The candidate's current job role is Lead Automation Architect and QA Lead at Ascendion Inc, a position they have held since November 2025. Their primary technology domain is Quality Assurance and Test Automation, with skill areas including test automation architecture, agile/scrum, CI/CD pipelines, and AI-driven test automation. They have expertise in programming languages such as Java, Python, and JavaScript, and are proficient in various testing frameworks and tools, including Selenium, Playwright, and Appium.
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ] Using 13 static keyword(s).
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   1. automation testing java
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   2. Automation Architect
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   3. QA Lead
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   4. Automation Testing Lead
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   5. Head of Test Automation
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   6. Technical Lead Quality Assurance
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   7. Senior Automation Engineer
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   8. Lead Quality Assurance Engineer
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   9. Sotware Development Engineer in Test
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   10. SDET
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   11. Senior Test Engineer
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   12. Test Automation Manager
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ KW ]   13. Senior Software Engineer in Test
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ MODE ] Parallel — 5 browser(s), 13 keyword(s), 50 max page(s).
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ MODE ]   Worker-1 → pages [1, 6, 11, 16, 21, 26, 31, 36, 41, 46] for every keyword
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ MODE ]   Worker-2 → pages [2, 7, 12, 17, 22, 27, 32, 37, 42, 47] for every keyword
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ MODE ]   Worker-3 → pages [3, 8, 13, 18, 23, 28, 33, 38, 43, 48] for every keyword
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ MODE ]   Worker-4 → pages [4, 9, 14, 19, 24, 29, 34, 39, 44, 49] for every keyword
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ MODE ]   Worker-5 → pages [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] for every keyword
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ W5 ] Starting — 13 keyword(s), pages [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] each
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ W1 ] Starting — 13 keyword(s), pages [1, 6, 11, 16, 21, 26, 31, 36, 41, 46] each
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ W2 ] Starting — 13 keyword(s), pages [2, 7, 12, 17, 22, 27, 32, 37, 42, 47] each
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ W4 ] Starting — 13 keyword(s), pages [4, 9, 14, 19, 24, 29, 34, 39, 44, 49] each
+2026-03-08 21:33:25 [INFO ] com.jobagent.Main - [ W3 ] Starting — 13 keyword(s), pages [3, 8, 13, 18, 23, 28, 33, 38, 43, 48] each
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:33:25 [INFO ] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Sumith\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ BROWSER ] Chrome started.
+2026-03-08 21:33:29 [INFO ] com.jobagent.agent.NaukriLoginAgent - [ LOGIN ] Navigating to Naukri...
+2026-03-08 21:33:37 [INFO ] com.jobagent.Main - Shutdown.
